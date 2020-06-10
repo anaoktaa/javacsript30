@@ -11,9 +11,9 @@ export const NodeContainer = styled.div`
 `;
 
 export const ThickNode = styled.div`
-    height: 10px;
-    width: 12px;
-    background-color: white;
+    height: ${(({hourMarksHeight}) => hourMarksHeight)}px;
+    width: ${(({hourMarksWidth}) => hourMarksWidth)}px;
+    background-color:  ${(({hourMarksColor}) => hourMarksColor)};
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -29,9 +29,9 @@ export const MinuteNodeContainer = styled.div`
 `;
 
 export const ThinNode = styled.div`
-    height: 5px;
-    width: 7px;
-    background-color: #7b7b7b;
+    height: ${(({minuteMarksHeight}) => minuteMarksHeight)}px;
+    width: ${(({minuteMarksWidth}) => minuteMarksWidth)}px;
+    background-color:  ${(({minuteMarksColor}) => minuteMarksColor)};
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
